@@ -1,4 +1,4 @@
-import { GanttChartSquare, Blocks, Gem } from "lucide-react";
+import { Monitor, Palette, LayoutPanelLeft } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -9,19 +9,19 @@ import {
 
 const serviceData = [
   {
-    icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
+    icon: <Monitor size={72} strokeWidth={0.8} />,
     title: "Front-end Development",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugit iste facilis at atque magni!",
   },
   {
-    icon: <Blocks size={72} strokeWidth={0.8} />,
+    icon: <Palette size={72} strokeWidth={0.8} />,
     title: "Ui/Ux Design",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugit iste facilis at atque magni!",
   },
   {
-    icon: <Gem size={72} strokeWidth={0.8} />,
+    icon: <LayoutPanelLeft size={72} strokeWidth={0.8} />,
     title: "Web Design",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugit iste facilis at atque magni!",
