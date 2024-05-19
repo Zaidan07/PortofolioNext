@@ -1,4 +1,4 @@
-import DevImg from "./DevImg";
+import DevImg from "./Devimg";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
