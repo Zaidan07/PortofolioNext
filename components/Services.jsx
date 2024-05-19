@@ -12,19 +12,19 @@ const serviceData = [
     icon: <Monitor size={72} strokeWidth={0.8} />,
     title: "Front-end Development",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugit iste facilis at atque magni!",
+      "",
   },
   {
     icon: <Palette size={72} strokeWidth={0.8} />,
     title: "Ui/Ux Design",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugit iste facilis at atque magni!",
+      "",
   },
   {
     icon: <LayoutPanelLeft size={72} strokeWidth={0.8} />,
     title: "Web Design",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugit iste facilis at atque magni!",
+      "",
   },
 ];
 

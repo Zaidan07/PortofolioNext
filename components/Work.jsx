@@ -21,7 +21,7 @@ const projectData = [
     category: "next js",
     name: "M-One Solution Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facere quae animi?",
+      "",
     link: "https://m-one-solution.vercel.app/",
     github: "https://github.com/Zaidan07/MOneSolution",
   },
@@ -30,7 +30,7 @@ const projectData = [
     category: "next js",
     name: "Blendtopia Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facere quae animi?",
+      "",
     link: "https://blendtopia.vercel.app/",
     github: "https://github.com/Zaidan07/Blendtopia",
   },
@@ -39,7 +39,7 @@ const projectData = [
     category: "next js",
     name: "Simaku Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facere quae animi?",
+      "",
     link: "https://simaku.vercel.app/",
     github: "https://github.com/Zaidan07/landingpage",
   },
@@ -48,7 +48,7 @@ const projectData = [
     category: "Bootstrap",
     name: "Cafe Shop Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facere quae animi?",
+      "",
     link: "https://kafuchino-coffe.netlify.app/",
     github: "https://github.com/Zaidan07/Kafuchino",
   },
