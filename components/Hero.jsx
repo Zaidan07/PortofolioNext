@@ -36,9 +36,11 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button>
+              <Link href='/cv-zaidan.pdf'>
+                <Button variant="secondary" className="gap-x-2">
+                  Download CV <Download size={18} />
+                </Button>
+              </Link>
             </div>
             {/* sosials */}
             <Socials
@@ -51,21 +53,21 @@ const Hero = () => {
           <div className="hidden xl:flex relative">
             {/* badge 1 */}
             <Badge
-            containerStyles='absolute top-[24%] -left-[5rem]'
+              containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
               endCountNum={2}
               badgeText="Years Of Experience"
             />
             {/* badge 2 */}
             <Badge
-            containerStyles='absolute top-[80%] -left-[1rem]'
+              containerStyles="absolute top-[80%] -left-[1rem]"
               icon={<RiTodoFill />}
               endCountNum={4}
               badgeText="Finished Projects"
             />
             {/* badge 3 */}
             <Badge
-            containerStyles='absolute top-[55%] -right-8'
+              containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />}
               endCountNum={10}
               badgeText="Happy Client"
