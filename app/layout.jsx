@@ -1,6 +1,5 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 //components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -9,21 +8,33 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "My Portfolio",
+  description: "Portofolio Zaidan",
+  keywords: "portofolio, masdan, developer, designer",
+  openGraph: {
+    title: "My Portfolio",
+    description: "Portofolio Zaidan",
+    type: "website",
+    url: "https://zaidannabih.vercel.app/",
+    images: [
+      {
+        url: "https://yourdomain.com/preview-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Preview image for My Portfolio",
+      },
+    ],
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <title>Zaidan Nabih | Frontend Developer</title>
-        <meta name="description" content="Portofolio Masdan: Web Developer dan Desainer Profesional" />
-        <meta name="keywords" content="portofolio, masdan, web developer, jidunmuhi, nextjs, react" />
-        <meta name="author" content="Masdan" />
-        <meta property="og:title" content="Masdan Portfolio" />
-        <meta property="og:description" content="Portofolio Masdan: Web Developer dan Desainer Profesional" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://zaidannabih.vercel.app/" />
-        <meta property="og:image" content="https://yourdomain.com/preview-image.png" />
-        <meta name="robots" content="index, follow" />
-      </Head>
+      <meta
+        name="google-site-verification"
+        content="tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI"
+      />
       <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
