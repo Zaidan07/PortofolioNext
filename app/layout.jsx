@@ -9,8 +9,23 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "My Portofolio",
+  title: "Zaidan Nabih | Frontend Web Developer", 
   description: "Portofolio Zaidan",
+  keywords: "portofolio, zaidan, masdan, jidun",
+  openGraph: {
+    title: "My Portfolio",
+    description: "Portofolio Zaidan",
+    type: "website",
+    url: "https://zaidannabih.vercel.app/",
+    images: [
+      {
+        url: "https://yourdomain.com/preview-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Preview image for My Portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
