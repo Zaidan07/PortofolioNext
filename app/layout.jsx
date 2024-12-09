@@ -3,6 +3,7 @@ import "./globals.css";
 //components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 //theme provider
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -31,10 +32,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <meta
-        name="google-site-verification"
-        content="tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI"
-      />
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta
+          name="google-site-verification"
+          content="tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI"
+        />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta
+          property="og:description"
+          content={metadata.openGraph.description}
+        />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+      </Head>
       <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
