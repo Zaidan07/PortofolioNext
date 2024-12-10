@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://zaidannabih.vercel.app
+
+# Sitemaps
+Sitemap: https://zaidannabih.vercel.app/sitemap.xml

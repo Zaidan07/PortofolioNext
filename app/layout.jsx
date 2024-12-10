@@ -12,7 +12,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata = {
   title: "My Portfolio",
   description: "Portofolio Zaidan",
-  keywords: "portofolio, masdan, developer, designer",
+  keywords: "portofolio, masdan, developer, designer, jidun, websitejidun,jidunheader",
   openGraph: {
     title: "My Portfolio",
     description: "Portofolio Zaidan",
