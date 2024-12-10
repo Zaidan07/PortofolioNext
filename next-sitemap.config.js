@@ -1,5 +1,6 @@
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://zaidannabih.vercel.app',
-    generateRobotsTxt: true, // (Optional) Menghasilkan robots.txt
-    sitemapSize: 7000, // Batasi jumlah URL per file sitemap
-};
+    siteUrl: 'https://zaidannabih.vercel.app', // Ganti dengan domain Anda
+    generateRobotsTxt: true, // Untuk membuat robots.txt
+    sitemapSize: 5000,
+  };
