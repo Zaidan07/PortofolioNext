@@ -6,74 +6,37 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 //theme provider
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Script from "next/script";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Muh Zaidan | A Frontend Engineer",
   description: "Portofolio Zaidan",
   verification: {
     google: "tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI",
   },
-  keywords:
-    "portofolio, masdan, developer, designer, jidun, websitejidun, jidunheader",
   openGraph: {
-    title: "My Portfolio",
+    title: "Muh Zaidan | A Frontend Engineer",
     description: "Portofolio Zaidan",
-    type: "website",
-    url: "https://muhzaidan.vercel.app/",
-    images: [
-      {
-        url: "https://wallpapercave.com/wp/wp13561106.png",
-        width: 1200,
-        height: 630,
-        alt: "Preview image for My Portfolio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@yourtwitterhandle",
+    images: "/public/logo.svg",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <meta
-          name="google-site-verification"
-          content={metadata.verification.google}
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href={metadata.openGraph.url} />
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-SSM2NF2R48"
+      />
+      <Script id="google-analytics-config">
+        {`  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <meta property="og:title" content={metadata.openGraph.title} />
-        <meta
-          property="og:description"
-          content={metadata.openGraph.description}
-        />
-        <meta property="og:type" content={metadata.openGraph.type} />
-        <meta property="og:url" content={metadata.openGraph.url} />
-        <meta property="og:image" content={metadata.openGraph.images[0].url} />
-        <meta
-          property="og:image:width"
-          content={metadata.openGraph.images[0].width}
-        />
-        <meta
-          property="og:image:height"
-          content={metadata.openGraph.images[0].height}
-        />
-        <meta
-          property="og:image:alt"
-          content={metadata.openGraph.images[0].alt}
-        />
-        <meta name="twitter:image" content={metadata.openGraph.images[0].url} />
-      </Head>
-
+  gtag('config', 'G-SSM2NF2R48');`}
+      </Script>
       <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
