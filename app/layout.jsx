@@ -12,7 +12,11 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata = {
   title: "My Portfolio",
   description: "Portofolio Zaidan",
-  keywords: "portofolio, masdan, developer, designer, jidun, websitejidun,jidunheader",
+  verification: {
+    google: "tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI",
+  },
+  keywords:
+    "portofolio, masdan, developer, designer, jidun, websitejidun, jidunheader",
   openGraph: {
     title: "My Portfolio",
     description: "Portofolio Zaidan",
@@ -27,6 +31,10 @@ export const metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@yourtwitterhandle",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -36,7 +44,13 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
-        <meta name="google-site-verification" content="tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI" />
+        <meta
+          name="google-site-verification"
+          content={metadata.verification.google}
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href={metadata.openGraph.url} />
+
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta
           property="og:description"
@@ -45,7 +59,21 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content={metadata.openGraph.type} />
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta
+          property="og:image:width"
+          content={metadata.openGraph.images[0].width}
+        />
+        <meta
+          property="og:image:height"
+          content={metadata.openGraph.images[0].height}
+        />
+        <meta
+          property="og:image:alt"
+          content={metadata.openGraph.images[0].alt}
+        />
+        <meta name="twitter:image" content={metadata.openGraph.images[0].url} />
       </Head>
+
       <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />

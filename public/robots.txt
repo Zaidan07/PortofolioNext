@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://muhzaidan.vercel.app
+
+# Sitemaps
+Sitemap: https://muhzaidan.vercel.app/sitemap.xml
