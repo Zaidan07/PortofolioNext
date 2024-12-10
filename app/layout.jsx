@@ -17,7 +17,7 @@ export const metadata = {
     title: "My Portfolio",
     description: "Portofolio Zaidan",
     type: "website",
-    url: "https://zaidannabih.vercel.app/",
+    url: "https://muhzaidan.vercel.app/",
     images: [
       {
         url: "https://wallpapercave.com/wp/wp13561106.png",
