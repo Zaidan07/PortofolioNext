@@ -36,10 +36,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
-        <meta
-          name="google-site-verification"
-          content="tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI"
-        />
+        <meta name="google-site-verification" content="tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI" />
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta
           property="og:description"
