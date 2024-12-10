@@ -20,7 +20,7 @@ export const metadata = {
     url: "https://zaidannabih.vercel.app/",
     images: [
       {
-        url: "https://yourdomain.com/preview-image.png",
+        url: "https://wallpapercave.com/wp/wp13561106.png",
         width: 1200,
         height: 630,
         alt: "Preview image for My Portfolio",
