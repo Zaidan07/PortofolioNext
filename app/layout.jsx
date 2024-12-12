@@ -3,7 +3,6 @@ import "./globals.css";
 //components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Head from "next/head";
 //theme provider
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Script from "next/script";
@@ -13,9 +12,6 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata = {
   title: "Muh Zaidan | A Frontend Engineer",
   description: "Portofolio Zaidan",
-  verification: {
-    google: "tezzab0I39qPUFmSZ1Fv2P7JxFlqzVdzB8-49ACGZOI",
-  },
   openGraph: {
     title: "Muh Zaidan | A Frontend Engineer",
     description: "Portofolio Zaidan",
